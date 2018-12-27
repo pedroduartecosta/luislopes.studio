@@ -1,0 +1,126 @@
+// Fonts
+@import './fonts';
+
+// Variables
+$text-color: #0A122A;
+$primary: #FFFDE7;
+$primary-bright: #FFEC24;
+$primary-dark: #F5F3DE;
+
+$gray: #7C7A7A;
+$light-gray: #F2F2F2;
+
+$font-stack-serif: "Open Sans", "Georgia", "Times", "Times New Roman", serif;
+$font-stack-sans: "Avenir Next", "Helvetica", sans-serif;
+
+// Normalize Styles
+@import 'node_modules/normalize.css/normalize';
+
+// Pure CSS
+@import 'node_modules/purecss/build/pure';
+@import 'node_modules/purecss/build/grids-responsive';
+
+// Imports
+@import './footer';
+@import './header';
+@import './about';
+@import './home';
+@import './photos';
+@import './projects';
+
+html, body, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: $font-stack-sans !important;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box-grid {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 1170px;
+  margin-left: -585px;
+  height: 100%;
+  z-index: -187;
+
+  &__box {
+      position: relative;
+      height: 100%;
+      width: calc(25% - 1px);
+      display: inline-block;    
+      border-left: solid 1px $light-gray; 
+      &--4 {
+        width: calc(25% - 2px);
+        border-right: solid 1px $light-gray;   
+      }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper, {
+    width: calc(100% - 40px);
+  }
+  .box-grid {
+    width: calc(100% - 40px);
+    left: 20px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: 740px;
+  }
+  .box-grid {
+    width: 740px;
+    margin-left: -370px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    width: 960px;
+  }
+  .box-grid {
+    width: 960px;
+    margin-left: -480px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1170px;
+  }
+  .box-grid {
+    width: 1170px;
+    margin-left: -585px;
+  }
+}
+
+.social-icon {
+    font-family: $font-stack-sans !important;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    &:last-of-type {
+        margin-right: 0px;
+    }
+    img {
+        height: 15px;
+        transition: transform 300ms ease;
+        &:hover, &:focus {
+            transform: scale(1.4);
+        }
+    }
+}
