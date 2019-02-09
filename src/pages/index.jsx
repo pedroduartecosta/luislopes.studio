@@ -15,6 +15,9 @@ class Index extends React.Component {
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
+
+
+
           <div className="section">
             <div className="section__label">
               <p>About</p>
@@ -22,11 +25,16 @@ class Index extends React.Component {
             </div>
             <div className="section__content">
               <p>
-                Hey, I’m Luís and I create media content.<br />Check out
+                Hey, I’m Luís and I create media content.<br />
+                
+              {/* Check out
                 some of my{" "}
                 <Link to="/projects" className="text-link">
                   projects
-                </Link>. I’m a photography enthusiast and every once in a
+                </Link>. 
+              */}
+              
+                I’m a photography enthusiast and every once in a
                 while I take some{" "}
                 <Link to="/photo" className="text-link">
                   photos
@@ -34,6 +42,9 @@ class Index extends React.Component {
               </p>
             </div>
           </div>
+
+
+
           <div className="section">
             <div className="section__label">
               <p>Photos</p>
@@ -44,27 +55,27 @@ class Index extends React.Component {
                 <div className="photo-grid__photo">
                   <div className="photo-grid__photo__wrapper">
                     <Img
-                      sizes={this.props.data.bavaria1.childImageSharp.fluid}
+                      sizes={this.props.data.angola1.childImageSharp.fluid}
                     />
                   </div>
                 </div>
                 <div className="photo-grid__photo">
                   <div className="photo-grid__photo__wrapper">
                     <Img
-                      sizes={this.props.data.bavaria2.childImageSharp.fluid}
+                      sizes={this.props.data.angola2.childImageSharp.fluid}
                     />
                   </div>
                 </div>
                 <div className="photo-grid__photo">
                   <div className="photo-grid__photo__wrapper">
                     <Img 
-                      sizes={this.props.data.bavaria3.childImageSharp.fluid} />
+                      sizes={this.props.data.angola11.childImageSharp.fluid} />
                   </div>
                 </div>
                 <div className="photo-grid__photo">
                   <div className="photo-grid__photo__wrapper">
                     <Img 
-                      sizes={this.props.data.bavaria4.childImageSharp.fluid} />
+                      sizes={this.props.data.angola10.childImageSharp.fluid} />
                   </div>
                 </div>
               </div>
@@ -73,6 +84,9 @@ class Index extends React.Component {
               </div>
             </div>
           </div>
+
+
+          {/*
           <div className="section">
             <div className="section__label">
               <p>Daily UI</p>
@@ -100,6 +114,9 @@ class Index extends React.Component {
               </div>
             </div>
           </div>
+          */}
+
+          {/*
           <div className="section">
             <div className="section__label">
               <p>Music</p>
@@ -164,6 +181,10 @@ class Index extends React.Component {
               </div>
             </div>
           </div>
+          */}
+
+
+
           <div className="section">
             <div className="section__label">
               <p>Contact</p>
@@ -171,13 +192,15 @@ class Index extends React.Component {
             </div>
             <div className="section__content section__content--secondary">
               <p>
-                Want to get in touch?<br />Shoot me a{" "}
+                Want to get in touch?<br />Send me an email to{" "}
                 <a
                   href="mailto:works@luislopes.studio"
                   className="text-link"
                 >
-                  mail
-                </a>{" "}
+                  works@luislopes.studio
+                </a>
+                <br/>
+                {" "}
                 or add me on{" "}
                 <a
                   href="https://de.linkedin.com/in/luislopes"
@@ -202,28 +225,29 @@ export default Index;
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
-    bavaria1: file(relativePath: { eq: "photos/bavaria-01.jpg" }) {
+    angola1: file(relativePath: { eq: "photos/angola/angola-001.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    bavaria2: file(relativePath: { eq: "photos/bavaria-02.jpg" }) {
+    angola2: file(relativePath: { eq: "photos/angola/angola-002.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    bavaria3: file(relativePath: { eq: "photos/bavaria-03.jpg" }) {
+
+    angola10: file(relativePath: { eq: "photos/angola/angola-010.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    bavaria4: file(relativePath: { eq: "photos/bavaria-05.jpg" }) {
+    angola11: file(relativePath: { eq: "photos/angola/angola-011.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid

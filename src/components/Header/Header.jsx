@@ -2,12 +2,9 @@ import React, { Component } from "react";
 import { Link } from "gatsby";
 
 import Mail from "../../images/icons/mail.svg";
-import Twitter from "../../images/icons/twitter.svg";
 import Linkedin from "../../images/icons/linkedin.svg";
-import Facebook from "../../images/icons/facebook.svg";
 import Instagram from "../../images/icons/instagram.svg";
-import Unsplash from "../../images/icons/unsplash.svg";
-import Github from "../../images/icons/github.svg";
+import Behance from "../../images/icons/behance.svg";
 
 class Header extends Component {
   render() {
@@ -28,15 +25,7 @@ class Header extends Component {
             <img src={Mail} alt="Mail" />
           </a>
           <a
-            href="https://www.twitter.com/luislopes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={Twitter} alt="Twitter" />
-          </a>
-          <a
-            href="https://de.linkedin.com/in/luislopes"
+            href="https://linkedin.com/in/luislopesstudio"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -44,15 +33,7 @@ class Header extends Component {
             <img src={Linkedin} alt="LinkedIn" />
           </a>
           <a
-            href="https://www.facebook.com/luislopes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={Facebook} alt="Facebook" />
-          </a>
-          <a
-            href="https://www.instagram.com/luislopes"
+            href="https://www.instagram.com/luispfmlopes"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -60,20 +41,12 @@ class Header extends Component {
             <img src={Instagram} alt="Instagram" />
           </a>
           <a
-            href="https://unsplash.com/@luislopes"
+            href="https://behance.net/luislopesstudio"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <img src={Unsplash} alt="Unsplash" />
-          </a>
-          <a
-            href="https://www.github.com/luislopes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={Github} alt="Github" />
+            <img src={Behance} alt="Behance" />
           </a>
         </div>
       </div>
