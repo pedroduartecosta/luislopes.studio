@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import MailGray from "../../images/icons/mail-gray.svg";
-import TwitterGray from "../../images/icons/twitter-gray.svg";
-import LinkedinGray from "../../images/icons/linkedin-gray.svg";
-import FacebookGray from "../../images/icons/facebook-gray.svg";
-import InstagramGray from "../../images/icons/instagram-gray.svg";
-import UnsplashGray from "../../images/icons/unsplash-gray.svg";
-import GithubGray from "../../images/icons/github-gray.svg";
+import Mail from "../../images/icons/mail.svg";
+import Linkedin from "../../images/icons/linkedin.svg";
+import Instagram from "../../images/icons/instagram.svg";
+import Behance from "../../images/icons/behance.svg";
 
 class Footer extends Component {
   render() {
@@ -21,55 +18,31 @@ class Footer extends Component {
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <img src={MailGray} alt="Mail" />
+            <img src={Mail} alt="Mail" />
           </a>
           <a
-            href="https://www.twitter.com/luislopes"
+            href="https://linkedin.com/in/luislopesstudio"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <img src={TwitterGray} alt="Twitter" />
+            <img src={Linkedin} alt="LinkedIn" />
           </a>
           <a
-            href="https://de.linkedin.com/in/luislopes"
+            href="https://www.instagram.com/luispfmlopes"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <img src={LinkedinGray} alt="LinkedIn" />
+            <img src={Instagram} alt="Instagram" />
           </a>
           <a
-            href="https://www.facebook.com/luislopes"
+            href="https://behance.net/luislopesstudio"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <img src={FacebookGray} alt="Facebook" />
-          </a>
-          <a
-            href="https://www.instagram.com/luislopes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={InstagramGray} alt="Instagram" />
-          </a>
-          <a
-            href="https://unsplash.com/@luislopes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={UnsplashGray} alt="Unsplash" />
-          </a>
-          <a
-            href="https://www.github.com/luislopes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={GithubGray} alt="Github" />
+            <img src={Behance} alt="Behance" />
           </a>
         </div>
       </div>
