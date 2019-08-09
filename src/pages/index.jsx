@@ -55,7 +55,7 @@ class Index extends React.Component {
                 <div className="photo-grid__photo">
                   <div className="photo-grid__photo__wrapper">
                     <Img
-                      sizes={this.props.data.angola1.childImageSharp.fluid}
+                      sizes={this.props.data.czech1.childImageSharp.fluid}
                     />
                   </div>
                 </div>
@@ -69,13 +69,13 @@ class Index extends React.Component {
                 <div className="photo-grid__photo">
                   <div className="photo-grid__photo__wrapper">
                     <Img 
-                      sizes={this.props.data.angola11.childImageSharp.fluid} />
+                      sizes={this.props.data.poland1.childImageSharp.fluid} />
                   </div>
                 </div>
                 <div className="photo-grid__photo">
                   <div className="photo-grid__photo__wrapper">
                     <Img 
-                      sizes={this.props.data.angola10.childImageSharp.fluid} />
+                      sizes={this.props.data.zambujeira1.childImageSharp.fluid} />
                   </div>
                 </div>
               </div>
@@ -225,7 +225,7 @@ export default Index;
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
-    angola1: file(relativePath: { eq: "photos/angola/angola-001.jpg" }) {
+    czech1: file(relativePath: { eq: "photos/czech/czech-004.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
@@ -240,14 +240,14 @@ export const pageQuery = graphql`
       }
     }
 
-    angola10: file(relativePath: { eq: "photos/angola/angola-010.jpg" }) {
+    poland1: file(relativePath: { eq: "photos/poland/poland-002.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    angola11: file(relativePath: { eq: "photos/angola/angola-011.jpg" }) {
+    zambujeira1: file(relativePath: { eq: "photos/zambujeira/zambujeira-004.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid

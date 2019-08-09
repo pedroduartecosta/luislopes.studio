@@ -14,10 +14,6 @@ class PhotoPage extends Component {
         <div className="about-container">
           <Helmet title={`${config.siteTitle} | Photos`} />
 
-
-
-
-
           <div className="section">
             <div className="album-grid">
               <div className="album-grid__header">
@@ -53,8 +49,113 @@ class PhotoPage extends Component {
             </div>
           </div>
 
+          <div className="section">
+            <div className="album-grid">
+              <div className="album-grid__header">
+                <h1>Czech Republic</h1>
+                <h2></h2>
+              </div>
+              <div className="album-grid__third-teaser">
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img sizes={this.props.data.czech1.childImageSharp.fluid} />
+                </div>
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img
+                    sizes={this.props.data.czech2.childImageSharp.fluid}
+                  />
+                </div>
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img
+                    sizes={this.props.data.czech3.childImageSharp.fluid}
+                  />
+                </div>
+              </div>
+              <div className="album-grid__half-teaser">
+                <div className="album-grid__half-teaser__wrapper">
+                  <Img sizes={this.props.data.czech4.childImageSharp.fluid} />
+                </div>
+                <div className="album-grid__half-teaser__wrapper">
+                  <Img sizes={this.props.data.czech5.childImageSharp.fluid} />
+                </div>
+              </div>
+              <div className="more-link">
+                <Link to="/photo/czech">more photos</Link>
+              </div>
+            </div>
+          </div>
 
 
+
+
+          <div className="section">
+            <div className="album-grid">
+              <div className="album-grid__header">
+                <h1>Poland</h1>
+                <h2></h2>
+              </div>
+              <div className="album-grid__third-teaser">
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img sizes={this.props.data.poland1.childImageSharp.fluid} />
+                </div>
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img
+                    sizes={this.props.data.poland2.childImageSharp.fluid}
+                  />
+                </div>
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img
+                    sizes={this.props.data.poland3.childImageSharp.fluid}
+                  />
+                </div>
+              </div>
+              <div className="album-grid__half-teaser">
+                <div className="album-grid__half-teaser__wrapper">
+                  <Img sizes={this.props.data.poland4.childImageSharp.fluid} />
+                </div>
+                <div className="album-grid__half-teaser__wrapper">
+                  <Img sizes={this.props.data.poland5.childImageSharp.fluid} />
+                </div>
+              </div>
+              <div className="more-link">
+                <Link to="/photo/poland">more photos</Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="section">
+            <div className="album-grid">
+              <div className="album-grid__header">
+                <h1>Zambujeira</h1>
+                <h2></h2>
+              </div>
+              <div className="album-grid__third-teaser">
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img sizes={this.props.data.zambujeira1.childImageSharp.fluid} />
+                </div>
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img
+                    sizes={this.props.data.zambujeira2.childImageSharp.fluid}
+                  />
+                </div>
+                <div className="album-grid__third-teaser__wrapper">
+                  <Img
+                    sizes={this.props.data.zambujeira3.childImageSharp.fluid}
+                  />
+                </div>
+              </div>
+              <div className="album-grid__half-teaser">
+                <div className="album-grid__half-teaser__wrapper">
+                  <Img sizes={this.props.data.zambujeira4.childImageSharp.fluid} />
+                </div>
+                <div className="album-grid__half-teaser__wrapper">
+                  <Img sizes={this.props.data.zambujeira5.childImageSharp.fluid} />
+                </div>
+              </div>
+              <div className="more-link">
+                <Link to="/photo/zambujeira">more photos</Link>
+              </div>
+            </div>
+          </div>
 
           
         </div>
@@ -112,6 +213,116 @@ export const photosQuery = graphql`
       }
     }
 
+    czech1: file(relativePath: { eq: "photos/czech/czech-006.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    czech2: file(relativePath: { eq: "photos/czech/czech-002.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    czech3: file(relativePath: { eq: "photos/czech/czech-003.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    czech4: file(relativePath: { eq: "photos/czech/czech-004.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    czech5: file(relativePath: { eq: "photos/czech/czech-005.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    poland1: file(relativePath: { eq: "photos/poland/poland-001.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    poland2: file(relativePath: { eq: "photos/poland/poland-002.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    poland3: file(relativePath: { eq: "photos/poland/poland-003.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    poland4: file(relativePath: { eq: "photos/poland/poland-004.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    poland5: file(relativePath: { eq: "photos/poland/poland-005.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    zambujeira1: file(relativePath: { eq: "photos/zambujeira/zambujeira-001.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    zambujeira2: file(relativePath: { eq: "photos/zambujeira/zambujeira-002.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    zambujeira3: file(relativePath: { eq: "photos/zambujeira/zambujeira-006.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    zambujeira4: file(relativePath: { eq: "photos/zambujeira/zambujeira-004.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    zambujeira5: file(relativePath: { eq: "photos/zambujeira/zambujeira-005.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
 
 
 
