@@ -9,7 +9,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer__logo">
-          <h4>Copyright © 2018.</h4>
+          <h4>Copyright © 2018</h4>
         </div>
         <div className="footer__links">
           <a
